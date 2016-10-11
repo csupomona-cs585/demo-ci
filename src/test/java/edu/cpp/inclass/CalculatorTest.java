@@ -22,8 +22,8 @@ import org.junit.runners.MethodSorters;
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class CalculatorTest {
 
-	@Rule
-	public Timeout timeoutRule = new Timeout(2, TimeUnit.SECONDS);
+//	@Rule
+//	public Timeout timeoutRule = new Timeout(2, TimeUnit.SECONDS);
 	
 	private Calculator c;
 
@@ -49,8 +49,7 @@ public class CalculatorTest {
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		}
-		
+		}		
 	}
 
 	@After
@@ -66,7 +65,7 @@ public class CalculatorTest {
 		Assert.assertEquals("The add operation is incorrect.", 90, sum);		
 	}
 
-	@Test(timeout = 6000)
+//	@Test(timeout = 6000)
 	public void testAdd2() {
 		Calculator c = new Calculator();
 		int sum = c.add(40, -50);
