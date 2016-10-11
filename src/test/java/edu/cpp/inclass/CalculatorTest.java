@@ -58,7 +58,7 @@ public class CalculatorTest {
 		tmpFile.delete();
 	}
 
-	@Test
+	//@Test
 	public void testAdd() {		
 		int sum = c.add();
 		Assert.assertTrue(!tmpFile.exists());
