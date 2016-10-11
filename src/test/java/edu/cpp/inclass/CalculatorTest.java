@@ -40,7 +40,7 @@ public class CalculatorTest {
 		c = new Calculator();
 		c.setA(40);
 		c.setB(50);
-		tmpFile = new File("/Users/yusun/Desktop/test.txt");
+		tmpFile = new File("test.txt");
 		FileWriter fileWrite;
 		try {
 			fileWrite = new FileWriter(tmpFile);
